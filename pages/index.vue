@@ -1,8 +1,11 @@
 <template>
-  <!-- <Navbar /> -->
   <div>
-    <!-- <h1>Hai</h1> -->
     <About/>
+    <Offer/>
+    <BigText/>
+    <Client/>
+    <Product/>
+    <Contact/>
   </div>
 </template>
 

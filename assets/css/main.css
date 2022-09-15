@@ -4,3 +4,37 @@
     box-shadow: inset 0 0 0 1000px rgb(32, 75, 93,0.75);
     background-position: center;
 }
+
+.section-2 {
+    background-color: #283489;
+}
+
+.section-2::before {
+    content: url("~/assets/img/substrat-1.svg");
+    position: absolute;
+    top: 622px;
+    left: 0;
+    width: 100%;
+}
+
+#offer::before {
+    content: url("~/assets/img/substrat-2.svg");
+    position: relative;
+    bottom: 22px;
+    left: -6px;
+    width: 100%;
+}
+
+#big-text {
+    color: #283489;
+    background-image: url("~/assets/img/bg-2.svg");
+    background-size:contain;
+    /* box-shadow: inset 0 0 0 1000px rgb(32, 75, 93,0.75); */
+    background-position: center;
+}
+
+#client-title {
+    background-image: url("~/assets/img/garis-random.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}

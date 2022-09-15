@@ -1,22 +1,59 @@
 <template>
-  <div class="section-1 p-5 md:p-24 text-white flex flex-wrap md:flex-nowrap md:justify-between">
-    <!-- Left -->
-    <div class="flex max-w-2xl">
-      <div class="my-auto">
-        <h1 class="text-2xl md:text-6xl font-semibold py-3">Siapa Kami?</h1>
-        <p>
-          PT ZETA DATA TELEMATIKA adalah perusahaan yang bergerak dalam bidang
-          Sistem Integrator (SI) berlokasi di Jakarta yang memiliki komitmen
-          untuk memberikan solusi teknologi terbaik dalam membantu setiap rekan
-          bisnis kami untuk mengembangkan usaha hingga terealisasi harapan
-          bisnisnya yang didukung dengan penggunaan IT.
-        </p>
+  <div>
+    <!-- First Section -->
+    <div
+      class="section-1 p-5 md:p-24 text-white flex flex-wrap md:flex-nowrap md:justify-between"
+    >
+      <!-- Left -->
+      <div class="flex max-w-2xl">
+        <div class="my-auto">
+          <h1 class="text-4xl md:text-6xl font-semibold py-3">Siapa Kami?</h1>
+          <p>
+            PT ZETA DATA TELEMATIKA adalah perusahaan yang bergerak dalam bidang
+            Sistem Integrator (SI) berlokasi di Jakarta yang memiliki komitmen
+            untuk memberikan solusi teknologi terbaik dalam membantu setiap
+            rekan bisnis kami untuk mengembangkan usaha hingga terealisasi
+            harapan bisnisnya yang didukung dengan penggunaan IT.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="mx-10 flex justify-center">
+        <img class="w-100 py-5" src="../assets/img/draw-1.svg" />
       </div>
     </div>
 
-    <!-- Right -->
-    <div class="mx-10 flex justify-center">
-      <img class="w-100 py-5" src="../assets/img/draw-1.svg" />
+    <!-- Second Section -->
+    <div
+      class="section-2 p-5 md:p-24 text-white flex flex-wrap md:flex-nowrap md:justify-between"
+    >
+      <!-- Left -->
+      <div class="flex max-w-2xl">
+        <div class="my-auto">
+          <p>
+            Perusahaan kami Didukung dengan berbagai portfolio pengalaman dalam
+            menangani berbagai klien menunjukan bukti nyata akan keseriusan
+            untuk menghadirkan solusi terbaik. 
+            
+            <br>
+            <br>
+
+            Perusahaan kami yang selalu
+            mengedepankan komitmen untuk membantu setiap rekan bisnis yang
+            bekerja sama dengan kami secara profesional dalam mengembangkan
+            bisnis dan usahanya dengan menghadirkan penggunaan teknologi. Pola
+            kerja kami yang bersifat fleksibel dapat menyesuaikan permintaan
+            kebutuhan masing-masing klien kami menjadi nilai tambah sehingga
+            kami selalu mendapatkan kepercayaan yang dapat diandalkan.
+          </p>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="mx-10 flex justify-center">
+        <img class="w-100 py-5" src="../assets/img/draw-2.svg" />
+      </div>
     </div>
   </div>
 </template>
