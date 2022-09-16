@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="space-y-32">
     <About/>
     <Offer/>
     <BigText/>
@@ -10,6 +10,7 @@
 </template>
 
 <script>
+
 export default {
   name: "IndexPage",
 };

@@ -1,5 +1,5 @@
 <template>
-  <div id="offer" class="mt-5 sm:py-24">
+  <div id="offer" class="mt-5 space-y-12">
     <!-- Title -->
     <div class="flex justify-center">
       <h1 class="text-3xl md:text-6xl font-semibold py-3">What We Offer?</h1>

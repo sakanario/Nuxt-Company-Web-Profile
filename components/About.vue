@@ -2,7 +2,7 @@
   <div id="about">
     <!-- First Section -->
     <div
-      class="section-1 p-5 sm:p-12 md:px-24 text-white flex flex-wrap md:flex-nowrap md:justify-center"
+      class="section-1 p-5 sm:p-12 sm:py-24 md:px-24 text-white flex flex-wrap md:flex-nowrap md:justify-center"
     >
       <!-- Left -->
       <div class="flex max-w-2xl">
@@ -31,7 +31,7 @@
 
     <!-- Second Section -->
     <div
-      class="section-2 p-5 sm:p-12 text-white flex flex-wrap sm:flex-row-reverse sm:flex-row md:flex-nowrap md:justify-center"
+      class="section-2 p-5 sm:p-12 sm:py-24 text-white flex flex-wrap sm:flex-row-reverse sm:flex-row md:flex-nowrap md:justify-center"
     >
       <!-- Left -->
       <div class="flex max-w-2xl sm:w-3/4 sm:ml-12">

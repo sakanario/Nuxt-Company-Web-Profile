@@ -2,7 +2,7 @@
   <nav class="flex justify-between sm:h-24">
     
     <!-- Company Logo -->
-    <img class="w-32" src="../assets/img/logo.svg" />
+    <img class="h-full" src="~/assets/img/logo.svg" />
 
     <!-- Nav Item -->
     <div class="flex justify-items-center mr-12">
