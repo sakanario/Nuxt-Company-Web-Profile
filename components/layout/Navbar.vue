@@ -14,7 +14,7 @@
 
     <!-- Nav Item -->
     <ul
-      class="text-xl sm:inline w-full md:w-1/4 sm:my-auto space-y-2 mb-5 flex flex-col text-gray-500 mr-12"
+      class="text-xl sm:inline w-full sm:my-auto space-y-2 mb-5 flex flex-col text-gray-500 mr-12"
       :class="{ 'hidden':hideNavbar }"
     >
       <li class="inline-flex mx-3 justify-center">Home</li>
