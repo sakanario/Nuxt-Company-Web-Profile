@@ -2,14 +2,14 @@
   <nav class="flex justify-between sm:h-24">
     
     <!-- Company Logo -->
-    <img class="h-full" src="~/assets/img/logo.svg" />
+    <img class="h-12 sm:h-full" src="~/assets/img/logo.svg" />
 
     <!-- Nav Item -->
-    <div class="flex justify-items-center mr-12">
+    <div class="flex justify-items-center">
       <button class="sm:hidden my-auto p-3">
         <font-awesome-icon icon="fa-solid fa-bars" />
       </button>
-      <ul class="hidden sm:inline my-auto text-gray-500">
+      <ul class="hidden sm:inline my-auto text-gray-500 mr-12">
         <li class="inline-flex mx-3">Home</li>
         <li class="inline-flex mx-3">About</li>
         <li class="inline-flex mx-3">
