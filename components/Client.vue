@@ -8,7 +8,7 @@
     </div>
 
     <!-- Client Container -->
-    <div class="grid grid-flow-row auto-rows-min mx-5">
+    <div class="grid grid-flow-row auto-rows-min grid-cols-2 gap-4 sm:grid-cols-4  mx-5 md:mx-32">
       <div class="flex justify-center">
         <img class="w-100" src="../assets/img/company-logo-1.png" />
       </div>
@@ -21,6 +21,7 @@
       <div class="flex justify-center">
         <img class="w-100" src="../assets/img/company-logo-1.png" />
       </div>
+     
     </div>
   </div>
 </template>

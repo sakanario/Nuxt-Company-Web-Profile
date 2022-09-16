@@ -6,7 +6,7 @@
     </div>
 
     <!-- Offer Container -->
-    <div class="flex flex-wrap">
+    <div class="flex flex-wrap sm:px-32 ">
       <OfferItem/>
       <OfferItem/>
       <OfferItem/>

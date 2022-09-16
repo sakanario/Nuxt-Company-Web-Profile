@@ -1,13 +1,13 @@
 <template>
-  <div class="mt-5">
+  <div class="mt-5 mb:12 md:mx-32">
     <!-- Title -->
-    <div class="flex justify-center">
-      <h1 class="text-3xl md:text-6xl font-semibold py-3">Hubungi Kami</h1>
+    <div class="flex justify-center sm:justify-start sm:ml-5">
+      <h1 class="text-3xl font-semibold py-3 sm:mb-5">Hubungi Kami</h1>
     </div>
 
-    <div class="flex justify-between flex-wrap">
+    <div class="flex justify-between flex-wrap sm:flex-nowrap">
       <!-- Left -->
-      <div class="flex justify-center flex-wrap">
+      <div class="flex flex-col mx-auto sm:mx-5 sm:w-full">
         <Map />
         <div class="mt-2 flex inline-flex justify-center">
           <img class="w-7" src="../assets/img/mail.svg" />
