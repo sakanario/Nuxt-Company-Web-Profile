@@ -61,7 +61,7 @@
       </div>
     </div>
     <!-- Transition 1 -->
-    <div id="transition" class="relative" style="width:105%;">
+    <div id="transition" class="relative" style="width:100%;">
       <img id="transition-image-2" class="w-full absolute" src="../assets/img/substrat-2.svg" />
     </div>
   </div>
