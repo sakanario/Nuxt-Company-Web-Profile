@@ -15,15 +15,12 @@
     width: 100%;
 }
 
-
-
-#offer::before {
-    content: url("~/assets/img/substrat-2.svg");
-    position: relative;
-    bottom: 22px;
-    left: -6px;
+#transition-image-2 {
+    margin-top: -1%;
+    margin-left: -1%;
     width: 100%;
 }
+
 
 #big-text {
     color: #283489;

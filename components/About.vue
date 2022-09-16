@@ -8,7 +8,7 @@
       <div class="flex max-w-2xl">
         <div class="my-auto">
           <h1 class="text-4xl md:text-6xl font-semibold py-3">Siapa Kami?</h1>
-          <p class="md:text-xl">
+          <p class="md:text-2xl">
             PT ZETA DATA TELEMATIKA adalah perusahaan yang bergerak dalam bidang
             Sistem Integrator (SI) berlokasi di Jakarta yang memiliki komitmen
             untuk memberikan solusi teknologi terbaik dalam membantu setiap
@@ -24,18 +24,19 @@
       </div>
     </div>
 
+    <!-- Transition 1 -->
     <div id="transition" class="relative">
       <img id="transition-image-1" class="w-full absolute" src="../assets/img/substrat-1.svg" />
     </div>
 
     <!-- Second Section -->
     <div
-      class="section-2 p-5 sm:p-12 text-white flex flex-wrap sm:flex-row md:flex-nowrap md:justify-center"
+      class="section-2 p-5 sm:p-12 text-white flex flex-wrap sm:flex-row-reverse sm:flex-row md:flex-nowrap md:justify-center"
     >
       <!-- Left -->
-      <div class="flex max-w-2xl sm:w-3/4">
+      <div class="flex max-w-2xl sm:w-3/4 sm:ml-12">
         <div class="my-auto">
-          <p class="md:text-xl">
+          <p class="md:text-2xl">
             Perusahaan kami Didukung dengan berbagai portfolio pengalaman dalam
             menangani berbagai klien menunjukan bukti nyata akan keseriusan
             untuk menghadirkan solusi terbaik.
@@ -58,6 +59,10 @@
       <div class="mx-10 sm:mx-0 w-full flex justify-center sm:w-1/4">
         <img class="w-full py-5" src="../assets/img/draw-2.svg" />
       </div>
+    </div>
+    <!-- Transition 1 -->
+    <div id="transition" class="relative" style="width:105%;">
+      <img id="transition-image-2" class="w-full absolute" src="../assets/img/substrat-2.svg" />
     </div>
   </div>
 </template>

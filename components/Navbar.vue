@@ -1,7 +1,11 @@
 <template>
-  <nav class="flex justify-between">
+  <nav class="flex justify-between sm:h-24">
+    
+    <!-- Company Logo -->
     <img class="w-32" src="../assets/img/logo.svg" />
-    <div class="flex justify-items-center">
+
+    <!-- Nav Item -->
+    <div class="flex justify-items-center mr-12">
       <button class="sm:hidden my-auto p-3">
         <font-awesome-icon icon="fa-solid fa-bars" />
       </button>
