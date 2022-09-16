@@ -9,6 +9,8 @@
     <div class="flex flex-wrap">
       <OfferItem/>
       <OfferItem/>
+      <OfferItem/>
+      <OfferItem/>
     </div>
   </div>
 </template>
