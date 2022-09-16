@@ -14,12 +14,12 @@
 
     <!-- Nav Item -->
     <ul
-      class="text-xl sm:inline w-full sm:my-auto space-y-2 mb-5 flex flex-col text-gray-500 mr-12"
+      class="text-xl sm:flex-row-reverse sm:inline-flex sm:flex-row w-full sm:my-auto  mb-5 flex flex-col text-gray-500 mr-12"
       :class="{ 'hidden':hideNavbar }"
     >
-      <li class="inline-flex mx-3 justify-center">Home</li>
-      <li class="inline-flex mx-3 justify-center">About</li>
-      <li class="inline-flex mx-3 justify-center">
+      <li class="inline-flex mx-3 my-auto py-2 justify-center">Home</li>
+      <li class="inline-flex mx-3 my-auto py-2 justify-center">About</li>
+      <li class="inline-flex mx-3 my-auto py-2 justify-center">
         <div class="flex space-x-2 justify-center">
           <button
             type="button"
