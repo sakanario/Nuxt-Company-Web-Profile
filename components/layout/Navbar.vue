@@ -1,8 +1,8 @@
 <template>
   <!-- Inner Wrapper  -->
-  <nav class="flex flex-col sm:flex-row">
+  <nav class="flex flex-col sm:flex-row sm:justify-between">
     <!-- Nav Normal -->
-    <div class="h-12 flex flex-row items-center justify-between">
+    <div class="h-12 sm:h-24 flex flex-row items-center justify-between">
       <!-- Company Logo (Left)-->
       <img class="h-full" src="~/assets/img/logo.svg" />
 
@@ -14,7 +14,7 @@
 
     <!-- Nav Item -->
     <ul
-      class="sm:inline space-y-2 mb-5 w-full flex flex-col text-gray-500 mr-12"
+      class="text-xl sm:inline w-full md:w-1/4 sm:my-auto space-y-2 mb-5 flex flex-col text-gray-500 mr-12"
       :class="{ 'hidden':hideNavbar }"
     >
       <li class="inline-flex mx-3 justify-center">Home</li>
@@ -23,7 +23,7 @@
         <div class="flex space-x-2 justify-center">
           <button
             type="button"
-            class="inline-block p-2 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
           >
             Contact Us
           </button>
