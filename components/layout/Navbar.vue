@@ -14,7 +14,7 @@
 
     <!-- Nav Item -->
     <ul
-      class="space-y-2 mb-5 w-full flex flex-col text-gray-500 mr-12"
+      class="sm:inline space-y-2 mb-5 w-full flex flex-col text-gray-500 mr-12"
       :class="{ 'hidden':hideNavbar }"
     >
       <li class="inline-flex mx-3 justify-center">Home</li>
