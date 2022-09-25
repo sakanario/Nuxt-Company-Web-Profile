@@ -1,4 +1,13 @@
 export default {
+  server: {
+    host: '0' // default: localhost
+  },
+
+  env: {
+    BE_BASEURL: process.env.BE_BASEURL,
+    COMPANY_NAME: process.env.COMPANY_NAME,
+  },
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -49,7 +58,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: process.env.BE_BASEURL,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

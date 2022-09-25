@@ -70,5 +70,27 @@
 <script>
 export default {
   name: "About",
+  data() {
+    return {
+      aboutData: {},
+    }
+  },
+  methods: {
+    async fetchAboutData() {
+      const data = this.$axios.get(
+        // `https://api.themoviedb.org/3/search/movie?api_key=${process.env.tmdb_API_Key}&query=${this.searchInput}`
+        `/api/company?sorttype=desc&sortby=id&row=10&keyword=${process.env.COMPANY_NAME}`
+      )
+
+      const result = await data
+      console.log(result)
+
+      // clear previous aboutData
+      this.aboutData = {}
+    },
+  },
+  mounted() {
+    this.fetchAboutData()
+  }
 };
 </script>
