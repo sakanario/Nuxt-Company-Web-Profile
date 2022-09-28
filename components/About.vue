@@ -8,10 +8,10 @@
       <div class="flex max-w-2xl">
         <div class="my-auto">
           <h1
-            v-html="aboutData.title"
+            v-html="CompanyData.title"
             class="text-4xl md:text-6xl font-semibold py-3"
           ></h1>
-          <p v-html="aboutData.sub_title" class="md:text-2xl"></p>
+          <p v-html="CompanyData.sub_title" class="md:text-2xl"></p>
         </div>
       </div>
 
@@ -37,7 +37,7 @@
       <!-- Left -->
       <div class="flex max-w-2xl sm:w-3/4 sm:ml-12">
         <div class="my-auto">
-          <p v-html="aboutData.company_description" class="md:text-2xl"></p>
+          <p v-html="CompanyData.company_description" class="md:text-2xl"></p>
         </div>
       </div>
 
@@ -93,7 +93,14 @@ export default {
     },
   },
   mounted() {
-    this.fetchAboutData();
+    // this.fetchAboutData();
   },
+  computed: {
+    CompanyData() {
+      console.log("computed");
+      console.log(this.$store.state.companyData);
+      return this.$store.state.companyData
+    }
+  }
 };
 </script>
