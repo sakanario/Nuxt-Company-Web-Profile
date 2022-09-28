@@ -4,7 +4,7 @@
     <!-- Nav Normal -->
     <div class="h-12 sm:h-24 flex flex-row items-center justify-between">
       <!-- Company Logo (Left)-->
-      <img class="h-full" src="~/assets/img/logo.svg" />
+      <img class="h-full" :src="CompanyData.logo_url" />
 
       <!-- Button (Right) -->
       <button @click="toggleNavbar" class="sm:hidden my-auto p-3">
@@ -14,8 +14,8 @@
 
     <!-- Nav Item -->
     <ul
-      class="text-xl sm:flex-row-reverse sm:inline-flex sm:flex-row w-full sm:my-auto  mb-5 flex flex-col text-gray-500 mr-12"
-      :class="{ 'hidden':hideNavbar }"
+      class="text-xl sm:flex-row-reverse sm:inline-flex sm:flex-row w-full sm:my-auto mb-5 flex flex-col text-gray-500 mr-12"
+      :class="{ hidden: hideNavbar }"
     >
       <li class="inline-flex mx-3 my-auto py-2 justify-center">Home</li>
       <li class="inline-flex mx-3 my-auto py-2 justify-center">About</li>
@@ -37,14 +37,19 @@
 export default {
   name: "Navbar",
   data() {
-    return{
-      hideNavbar : true,
-    }
+    return {
+      hideNavbar: true,
+    };
   },
-  methods : {
+  methods: {
     toggleNavbar() {
-      this.hideNavbar = !this.hideNavbar
-    }
-  }
+      this.hideNavbar = !this.hideNavbar;
+    },
+  },
+  computed: {
+    CompanyData() {
+      return this.$store.state.companyData;
+    },
+  },
 };
 </script>
