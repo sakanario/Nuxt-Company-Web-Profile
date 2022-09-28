@@ -77,16 +77,20 @@ export default {
   },
   methods: {
     async fetchAboutData() {
-      const data = this.$axios.get(
+      const result = await this.$axios.get(
         // `https://api.themoviedb.org/3/search/movie?api_key=${process.env.tmdb_API_Key}&query=${this.searchInput}`
         `/api/company?sorttype=desc&sortby=id&row=10&keyword=${process.env.COMPANY_NAME}`
       )
 
-      const result = await data
-      console.log(result)
+      console.log(result.data?.data?.data.length == 0 ? [] : result.data?.data?.data[0] )
+      result = result.data?.data?.data.length == 0 ? [] : result.data?.data?.data[0]
 
       // clear previous aboutData
-      this.aboutData = {}
+      this.aboutData = {
+        company_description: result.company_description,
+        company_name: result.company_name,
+        logo_url: result.logo_url,
+      }
     },
   },
   mounted() {
