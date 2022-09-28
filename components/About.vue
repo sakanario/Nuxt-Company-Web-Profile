@@ -7,14 +7,11 @@
       <!-- Left -->
       <div class="flex max-w-2xl">
         <div class="my-auto">
-          <h1 class="text-4xl md:text-6xl font-semibold py-3">Siapa Kami?</h1>
-          <p class="md:text-2xl">
-            PT ZETA DATA TELEMATIKA adalah perusahaan yang bergerak dalam bidang
-            Sistem Integrator (SI) berlokasi di Jakarta yang memiliki komitmen
-            untuk memberikan solusi teknologi terbaik dalam membantu setiap
-            rekan bisnis kami untuk mengembangkan usaha hingga terealisasi
-            harapan bisnisnya yang didukung dengan penggunaan IT.
-          </p>
+          <h1
+            v-html="aboutData.title"
+            class="text-4xl md:text-6xl font-semibold py-3"
+          ></h1>
+          <p v-html="aboutData.sub_title" class="md:text-2xl"></p>
         </div>
       </div>
 
@@ -26,7 +23,11 @@
 
     <!-- Transition 1 -->
     <div id="transition" class="relative">
-      <img id="transition-image-1" class="w-full absolute" src="../assets/img/substrat-1.svg" />
+      <img
+        id="transition-image-1"
+        class="w-full absolute"
+        src="../assets/img/substrat-1.svg"
+      />
     </div>
 
     <!-- Second Section -->
@@ -36,22 +37,7 @@
       <!-- Left -->
       <div class="flex max-w-2xl sm:w-3/4 sm:ml-12">
         <div class="my-auto">
-          <p class="md:text-2xl">
-            Perusahaan kami Didukung dengan berbagai portfolio pengalaman dalam
-            menangani berbagai klien menunjukan bukti nyata akan keseriusan
-            untuk menghadirkan solusi terbaik.
-
-            <br />
-            <br />
-
-            Perusahaan kami yang selalu mengedepankan komitmen untuk membantu
-            setiap rekan bisnis yang bekerja sama dengan kami secara profesional
-            dalam mengembangkan bisnis dan usahanya dengan menghadirkan
-            penggunaan teknologi. Pola kerja kami yang bersifat fleksibel dapat
-            menyesuaikan permintaan kebutuhan masing-masing klien kami menjadi
-            nilai tambah sehingga kami selalu mendapatkan kepercayaan yang dapat
-            diandalkan.
-          </p>
+          <p v-html="aboutData.company_description" class="md:text-2xl"></p>
         </div>
       </div>
 
@@ -61,8 +47,12 @@
       </div>
     </div>
     <!-- Transition 1 -->
-    <div id="transition" class="relative" style="width:100%;">
-      <img id="transition-image-2" class="w-full absolute" src="../assets/img/substrat-2.svg" />
+    <div id="transition" class="relative" style="width: 100%">
+      <img
+        id="transition-image-2"
+        class="w-full absolute"
+        src="../assets/img/substrat-2.svg"
+      />
     </div>
   </div>
 </template>
@@ -73,28 +63,37 @@ export default {
   data() {
     return {
       aboutData: {},
-    }
+    };
   },
   methods: {
     async fetchAboutData() {
-      const result = await this.$axios.get(
-        // `https://api.themoviedb.org/3/search/movie?api_key=${process.env.tmdb_API_Key}&query=${this.searchInput}`
-        `/api/company?sorttype=desc&sortby=id&row=10&keyword=${process.env.COMPANY_NAME}`
-      )
+      this.$axios
+        .get(
+          `/api/company?sorttype=desc&sortby=id&row=10&keyword=${process.env.COMPANY_NAME}`
+        )
+        .then(
+          (response) => {
+            let data =
+              response.data?.data?.data.length == 0
+                ? []
+                : response.data?.data?.data[0];
 
-      console.log(result.data?.data?.data.length == 0 ? [] : result.data?.data?.data[0] )
-      result = result.data?.data?.data.length == 0 ? [] : result.data?.data?.data[0]
-
-      // clear previous aboutData
-      this.aboutData = {
-        company_description: result.company_description,
-        company_name: result.company_name,
-        logo_url: result.logo_url,
-      }
+            this.aboutData = {
+              company_description: data?.company_description,
+              company_name: data?.company_name,
+              logo_url: data?.logo_url,
+              sub_title: data?.sub_title,
+              title: data?.title,
+            };
+          },
+          (error) => {
+            console.log(error);
+          }
+        );
     },
   },
   mounted() {
-    this.fetchAboutData()
-  }
+    this.fetchAboutData();
+  },
 };
 </script>
