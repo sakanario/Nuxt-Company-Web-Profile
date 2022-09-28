@@ -60,45 +60,8 @@
 <script>
 export default {
   name: "About",
-  data() {
-    return {
-      aboutData: {},
-    };
-  },
-  methods: {
-    async fetchAboutData() {
-      this.$axios
-        .get(
-          `/api/company?sorttype=desc&sortby=id&row=10&keyword=${process.env.COMPANY_NAME}`
-        )
-        .then(
-          (response) => {
-            let data =
-              response.data?.data?.data.length == 0
-                ? []
-                : response.data?.data?.data[0];
-
-            this.aboutData = {
-              company_description: data?.company_description,
-              company_name: data?.company_name,
-              logo_url: data?.logo_url,
-              sub_title: data?.sub_title,
-              title: data?.title,
-            };
-          },
-          (error) => {
-            console.log(error);
-          }
-        );
-    },
-  },
-  mounted() {
-    // this.fetchAboutData();
-  },
   computed: {
     CompanyData() {
-      console.log("computed");
-      console.log(this.$store.state.companyData);
       return this.$store.state.companyData
     }
   }

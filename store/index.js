@@ -18,9 +18,6 @@ export const mutations = {
       sub_title: data?.data?.sub_title,
       title: data?.data?.title,
     };
-
-    console.log("setCOmpanyData");
-    console.log(state);
   },
 };
 
