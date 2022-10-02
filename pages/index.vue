@@ -15,6 +15,7 @@ export default {
   name: "IndexPage",
   mounted() {
     this.$store.dispatch('fetchCompanyData')
+    this.$store.dispatch('service/fetchServiceData')
   }
 };
 </script>

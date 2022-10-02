@@ -1,14 +1,14 @@
 <template>
-  <div class="mt-3 sm:w-1/2">
+  <div class="mt-3">
     <!-- Icon -->
     <div class="flex justify-center">
-      <img class="w-100" src="../assets/img/link.svg" />
+      <img id="icon" :src="img_url" />
     </div>
 
     <!-- Text -->
     <div class="px-5 py-2">
-      <h1 class="text-2xl sm:text-3xl font-semibold py-3">System Integrator</h1>
-      <p>
+      <h1 v-html="title" class="text-center text-2xl sm:text-3xl font-semibold py-3"></h1>
+      <p v-html="description" class="text-justify">
         Dengan menggunakan system integrator, perusahaan dapat menyelaraskan
         komponen yang lebih competitive dan telah dikonfigurasikan sebelumnya
         dan komersial dari perangkat lunak rak untuk memenuhi sasaran bisnis
@@ -20,6 +20,13 @@
 
 <script>
 export default {
-  name: "Offer",
+  name: "OfferItem",
+  props: ['title','description','img_url']
 };
 </script>
+
+<style scoped>
+#icon {
+  max-width: 100px;
+}
+</style>

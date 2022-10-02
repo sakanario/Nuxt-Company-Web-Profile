@@ -6,11 +6,12 @@
     </div>
 
     <!-- Offer Container -->
-    <div class="flex flex-wrap sm:px-32 ">
-      <OfferItem/>
-      <OfferItem/>
-      <OfferItem/>
-      <OfferItem/>
+    <div class="grid grid-cols-4 gap-1 sm:px-32 ">
+      <OfferItem v-for="(item, index) in ServiceData" :key="index" 
+        :title="item.title"
+        :description="item.description"
+        :img_url="item.image_url"
+      />
     </div>
   </div>
 </template>
@@ -18,5 +19,10 @@
 <script>
 export default {
   name: "Offer",
+  computed: {
+    ServiceData() {
+      return this.$store.state.service.serviceData
+    }
+  },
 };
 </script>
