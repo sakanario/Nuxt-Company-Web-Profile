@@ -17,6 +17,8 @@ export default {
     this.$store.dispatch('fetchCompanyData')
     this.$store.dispatch('service/fetchServiceData')
     this.$store.dispatch('customer/fetchCustomerData')
+    this.$store.dispatch('product/fetchProductData')
+    
   }
 };
 </script>

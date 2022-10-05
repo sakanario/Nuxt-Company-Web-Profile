@@ -9,17 +9,8 @@
 
     <!-- Product Container -->
     <div class="grid grid-flow-row auto-rows-min grid-cols-2 gap-4 sm:grid-cols-4 mx-5 md:mx-32">
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
-      </div>
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
-      </div>
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
-      </div>
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
+      <div v-for="(item, index) in ProductData" :key="index" class="flex justify-center">
+        <img class="w-100" :src="item.product_image" />
       </div>
     </div>
   </div>
@@ -28,5 +19,10 @@
 <script>
 export default {
   name: "Client",
+  computed: {
+    ProductData() {
+      return this.$store.state.product.productData
+    }
+  }
 };
 </script>
