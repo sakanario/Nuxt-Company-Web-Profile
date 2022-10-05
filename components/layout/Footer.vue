@@ -1,18 +1,26 @@
 <template>
   <footer class="mt-32 p-4 bg-white sm:p-6 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0">
-        <a href="https://flowbite.com/" class="flex items-center">
-          <img
+      <div class="mb-6 md:mb-0 ">
+        <a href="#" class="flex items-center">
+          <!-- <img
             src="https://flowbite.com/docs/images/logo.svg"
             class="mr-3 h-8"
             alt="FlowBite Logo"
-          />
+          /> -->
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Flowbite</span
+            >PT Zeta Telematika Data</span
           >
         </a>
+        <p class="text-gray-600 dark:text-gray-400">
+          Jalan Taman Jatibaru Barat No. 2, Cideng, Kota Jakarta Pusat DKI
+          Jakarta 10150
+        </p>
+        <p class="text-gray-600 dark:text-gray-400">
+          Phone: 021 3503881 Fax: 021 3503879 <br>
+          Email: info@kapalapi.co.id
+        </p>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
         <div>
@@ -76,7 +84,7 @@
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2022
-        <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
+        <a href="https://flowbite.com/" class="hover:underline">PT Zeta Telematika Data™</a>.
         All Rights Reserved.
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
