@@ -1,7 +1,7 @@
 <template>
   <footer class="mt-32 p-4 bg-white sm:p-6 dark:bg-gray-900">
     <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0 ">
+      <div class="mb-6 md:mb-0">
         <a href="#" class="flex items-center">
           <!-- <img
             src="https://flowbite.com/docs/images/logo.svg"
@@ -9,17 +9,17 @@
             alt="FlowBite Logo"
           /> -->
           <span
+            v-html="ContactData?.perusahaan?.company_name"
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >PT Zeta Telematika Data</span
-          >
+          ></span>
         </a>
+        <p
+          v-html="ContactData?.address"
+          class="text-gray-600 dark:text-gray-400"
+        ></p>
         <p class="text-gray-600 dark:text-gray-400">
-          Jalan Taman Jatibaru Barat No. 2, Cideng, Kota Jakarta Pusat DKI
-          Jakarta 10150
-        </p>
-        <p class="text-gray-600 dark:text-gray-400">
-          Phone: 021 3503881 Fax: 021 3503879 <br>
-          Email: info@kapalapi.co.id
+          Phone: <span v-html="ContactData?.phone_number"></span> <br />
+          Email: <span v-html="ContactData?.email"></span>
         </p>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -84,8 +84,9 @@
     <div class="sm:flex sm:items-center sm:justify-between">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2022
-        <a href="https://flowbite.com/" class="hover:underline">PT Zeta Telematika Data™</a>.
-        All Rights Reserved.
+        <a href="#" v-html="ContactData?.perusahaan?.company_name" class="hover:underline"
+          >PT Zeta Telematika Data™</a
+        >. All Rights Reserved.
       </span>
       <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
         <a
@@ -180,3 +181,14 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  name: "Footer",
+  computed: {
+    ContactData() {
+      return this.$store.state.contact.contactData;
+    },
+  },
+};
+</script>

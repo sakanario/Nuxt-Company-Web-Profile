@@ -23,13 +23,13 @@
         min-width: 350px;
         min-height: 192px;
         border-radius: 19px;
-        width :100%;
-        height :100%;
+        width: 100%;
+        height: 100%;
       }
 
       #gmap_canvas {
-        width :100%;
-        height :100%;
+        width: 100%;
+        height: 100%;
       }
     </style>
   </div>

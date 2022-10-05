@@ -11,7 +11,7 @@
         <Map />
         <div class="mt-2 flex inline-flex justify-center">
           <img class="w-7" src="../assets/img/mail.svg" />
-          <span class="mx-1 my-auto">sales@zetadata.co.id</span>
+          <span class="mx-1 my-auto" v-html="ContactData?.email"></span>
         </div>
       </div>
 
@@ -75,5 +75,10 @@
 <script>
 export default {
   name: "Contact",
+  computed: {
+    ContactData() {
+      return this.$store.state.contact.contactData;
+    },
+  },
 };
 </script>
