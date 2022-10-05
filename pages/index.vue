@@ -16,6 +16,7 @@ export default {
   mounted() {
     this.$store.dispatch('fetchCompanyData')
     this.$store.dispatch('service/fetchServiceData')
+    this.$store.dispatch('customer/fetchCustomerData')
   }
 };
 </script>

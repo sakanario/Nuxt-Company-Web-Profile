@@ -9,19 +9,9 @@
 
     <!-- Client Container -->
     <div class="grid grid-flow-row auto-rows-min grid-cols-2 gap-4 sm:grid-cols-4  mx-5 md:mx-32">
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
+      <div v-for="(item, index) in CustomerData" :key="index" class="flex justify-center">
+        <img class="w-100" :src="item.customer_image" />
       </div>
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
-      </div>
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
-      </div>
-      <div class="flex justify-center">
-        <img class="w-100" src="../assets/img/company-logo-1.png" />
-      </div>
-     
     </div>
   </div>
 </template>
@@ -29,5 +19,10 @@
 <script>
 export default {
   name: "Client",
+  computed : {
+    CustomerData(){
+      return this.$store.state.customer.customerData
+    }
+  }
 };
 </script>
