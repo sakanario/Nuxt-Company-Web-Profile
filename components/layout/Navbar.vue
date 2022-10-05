@@ -21,12 +21,14 @@
       <li class="inline-flex mx-3 my-auto py-2 justify-center">About</li>
       <li class="inline-flex mx-3 my-auto py-2 justify-center">
         <div class="flex space-x-2 justify-center">
-          <button
-            type="button"
-            class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-          >
-            Contact Us
-          </button>
+          <nuxt-link :to="{ path: '/',hash:'#contact-us'}">
+            <button
+              type="button"
+              class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Contact Us
+            </button>
+          </nuxt-link>
         </div>
       </li>
     </ul>
