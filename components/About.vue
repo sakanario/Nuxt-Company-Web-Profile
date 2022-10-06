@@ -31,7 +31,7 @@
     </div>
 
     <!-- Second Section -->
-    <div
+    <div id="secondAbout"
       class="section-2 p-5 sm:p-12 sm:py-24 text-white flex flex-wrap sm:flex-row-reverse sm:flex-row md:flex-nowrap md:justify-center"
     >
       <!-- Left -->

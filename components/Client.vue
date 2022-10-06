@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="client">
     <!-- Title -->
     <div class="flex justify-center">
       <h1 id="client-title" class="text-3xl md:text-6xl font-semibold py-3">
