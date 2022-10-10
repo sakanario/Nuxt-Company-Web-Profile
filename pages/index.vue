@@ -13,12 +13,8 @@
 
 export default {
   name: "IndexPage",
+  
   mounted() {
-    this.$store.dispatch('fetchCompanyData')
-    this.$store.dispatch('service/fetchServiceData')
-    this.$store.dispatch('customer/fetchCustomerData')
-    this.$store.dispatch('product/fetchProductData')
-    this.$store.dispatch('contact/fetchContactData')
     
   }
 };
