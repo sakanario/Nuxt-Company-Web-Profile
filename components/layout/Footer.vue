@@ -22,14 +22,14 @@
           Email: <span v-html="ContactData?.email"></span>
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-        <div class="flex">
+      <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
+        <div class="flex col-span-2">
           <!-- <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
             Resources
           </h2> -->
-          <ul class="text-gray-600 dark:text-gray-400 my-auto">
+          <ul class="text-gray-600 dark:text-gray-400 my-auto mr-10">
             <li class="mb-4">
               <nuxt-link :to="{ path: '/', hash: '#contact-us' }">
                 <button
@@ -40,7 +40,6 @@
                 </button>
               </nuxt-link>
             </li>
-            
           </ul>
         </div>
         <div class="flex">
@@ -51,16 +50,14 @@
           </h2> -->
           <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
-              <a
-                href="https://github.com/themesberg/flowbite"
-                class="hover:underline"
-                >Github</a
-              >
+              <nuxt-link :to="{ path: '/', hash: '#secondAbout' }">
+                About
+              </nuxt-link>
             </li>
             <li>
-              <a href="https://discord.gg/4eeurUVvTy" class="hover:underline"
-                >Discord</a
-              >
+              <nuxt-link :to="{ path: '/', hash: '#offer' }">
+                Service
+              </nuxt-link>
             </li>
           </ul>
         </div>
@@ -72,12 +69,15 @@
           </h2> -->
           <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
-              <a href="#" class="hover:underline">Privacy Policy</a>
+              <nuxt-link :to="{ path: '/', hash: '#client' }">
+                Client
+              </nuxt-link>
             </li>
             <li>
-              <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+        <nuxt-link :to="{ path: '/', hash: '#product' }"> Product </nuxt-link>
+              
+              <!-- <a href="#" class="hover:underline">Terms &amp; Conditions</a> -->
             </li>
-            
           </ul>
         </div>
       </div>
