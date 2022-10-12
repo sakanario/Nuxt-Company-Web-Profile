@@ -1,6 +1,6 @@
 <template>
   <!-- Inner Wrapper  -->
-  <nav id="navbar" class="flex flex-col sm:flex-row sm:justify-between">
+  <nav id="navbar" class="flex flex-col sm:flex-row sm:justify-between md:mx-32">
     <!-- Nav Normal -->
     <div class="h-12 sm:h-24 flex flex-row items-center justify-between">
       <!-- Company Logo (Left)-->

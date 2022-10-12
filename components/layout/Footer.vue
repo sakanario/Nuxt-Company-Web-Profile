@@ -1,7 +1,7 @@
 <template>
   <footer id="contact-us" class="mt-32 p-4 bg-white sm:p-6 dark:bg-gray-900">
-    <div class="md:flex md:justify-between">
-      <div class="mb-6 md:mb-0">
+    <div class="md:flex md:justify-between md:mx-32">
+      <div class="mb-6 md:mb-0 max-w-md">
         <a href="#" class="flex items-center">
           <!-- <img
             src="https://flowbite.com/docs/images/logo.svg"
@@ -23,32 +23,33 @@
         </p>
       </div>
       <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
-        <div>
-          <h2
+        <div class="flex">
+          <!-- <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
             Resources
-          </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          </h2> -->
+          <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
-              <a href="https://flowbite.com/" class="hover:underline"
-                >Flowbite</a
-              >
+              <nuxt-link :to="{ path: '/', hash: '#contact-us' }">
+                <button
+                  type="button"
+                  class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                >
+                  Contact Us
+                </button>
+              </nuxt-link>
             </li>
-            <li>
-              <a href="https://tailwindcss.com/" class="hover:underline"
-                >Tailwind CSS</a
-              >
-            </li>
+            
           </ul>
         </div>
-        <div>
-          <h2
+        <div class="flex">
+          <!-- <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
             Follow us
-          </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          </h2> -->
+          <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
               <a
                 href="https://github.com/themesberg/flowbite"
@@ -63,28 +64,32 @@
             </li>
           </ul>
         </div>
-        <div>
-          <h2
+        <div class="flex">
+          <!-- <h2
             class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
           >
             Legal
-          </h2>
-          <ul class="text-gray-600 dark:text-gray-400">
+          </h2> -->
+          <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
               <a href="#" class="hover:underline">Privacy Policy</a>
             </li>
             <li>
               <a href="#" class="hover:underline">Terms &amp; Conditions</a>
             </li>
+            
           </ul>
         </div>
       </div>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-    <div class="sm:flex sm:items-center sm:justify-between">
+    <div class="sm:flex sm:items-center sm:justify-between md:mx-32">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2022
-        <a href="#" v-html="ContactData?.perusahaan?.company_name" class="hover:underline"
+        <a
+          href="#"
+          v-html="ContactData?.perusahaan?.company_name"
+          class="hover:underline"
           >PT Zeta Telematika Data™</a
         >. All Rights Reserved.
       </span>
