@@ -20,6 +20,7 @@
         <!-- Nama -->
         <div class="relative z-0 mb-6 w-full group">
           <input
+            v-model="name"
             type="text"
             name="nama"
             id="nama"
@@ -62,11 +63,20 @@
             >Message</label
           >
           <textarea
+            v-model="message"
             id="message"
             rows="4"
-            class="appearance-none border-b-2 block p-2.5 w-full focus:outline-none focus:border-blue-600 "
+            class="appearance-none border-b-2 block p-2.5 w-full focus:outline-none focus:border-blue-600"
           ></textarea>
         </div>
+
+        <button
+          type="button"
+          class="inline-block p-2 bg-green-600 text-white leading-tight rounded-lg shadow-md hover:bg-green-700 hover:shadow-lg focus:bg-green-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-green-800 active:shadow-lg transition duration-150 ease-in-out"
+          @click="sendMessage"
+        >
+          Send Message
+        </button>
       </div>
     </div>
   </div>
@@ -75,10 +85,22 @@
 <script>
 export default {
   name: "Contact",
+  data() {
+    return {
+      name : "",
+      message : "",
+    }
+  },
   computed: {
     ContactData() {
       return this.$store.state.contact.contactData;
     },
   },
+  methods : {
+    sendMessage() {
+      console.log(this.ContactData);
+      window.open(`https://api.whatsapp.com/send?phone=${this.ContactData.phone_number}&text=halo, saya ${this.name}, ${this.message}`, '_blank')
+    }
+  }
 };
 </script>
