@@ -6,7 +6,7 @@
     </div>
 
     <!-- Offer Container -->
-    <div class="grid grid-cols-4 gap-1 sm:px-32 ">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4   gap-1 sm:px-32 ">
       <OfferItem v-for="(item, index) in ServiceData" :key="index" 
         :title="item.title"
         :description="item.description"
