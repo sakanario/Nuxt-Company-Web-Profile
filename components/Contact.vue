@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-5 mb:12 md:mx-32">
+  <div id="hubungi-kami" class="mt-5 mb:12 md:mx-32">
     <!-- Title -->
     <div class="flex justify-center sm:justify-start sm:ml-5">
       <h1 class="text-3xl font-semibold py-3 sm:mb-5">Hubungi Kami</h1>
