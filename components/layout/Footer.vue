@@ -1,13 +1,11 @@
 <template>
   <footer id="contact-us" class="mt-32 p-4 bg-white sm:p-6 dark:bg-gray-900">
+    
+    <!-- Section 1 -->
     <div class="md:flex md:justify-between md:mx-32">
+      <!-- Left Side -->
       <div class="mb-6 md:mb-0 max-w-md">
         <a href="#" class="flex items-center">
-          <!-- <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="mr-3 h-8"
-            alt="FlowBite Logo"
-          /> -->
           <span
             v-html="ContactData?.perusahaan?.company_name"
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
@@ -22,32 +20,35 @@
           Email: <span v-html="ContactData?.email"></span>
         </p>
       </div>
-      <div class="grid grid-cols-2 gap-2 sm:gap-6 sm:grid-cols-3">
-        <div class="flex col-span-2">
-          <!-- <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Resources
-          </h2> -->
-          <ul class="text-gray-600 dark:text-gray-400 my-auto mr-10">
+
+      <!-- Right Side -->
+      <div class="grid grid-flow-row gap-4">
+        <div>
+          <nuxt-link :to="{ path: '/', hash: '#contact-us' }">
+            <button
+              type="button"
+              class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            >
+              Contact Us
+            </button>
+          </nuxt-link>
+        </div>
+
+        <div class="grid grid-cols-2 gap-2 sm:gap-6 md:gap-32 xl:gap-40">
+        
+          <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
-              <nuxt-link :to="{ path: '/', hash: '#contact-us' }">
-                <button
-                  type="button"
-                  class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
-                >
-                  Contact Us
-                </button>
+              <nuxt-link :to="{ path: '/', hash: '#secondAbout' }">
+                About
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link :to="{ path: '/', hash: '#offer' }">
+                Service
               </nuxt-link>
             </li>
           </ul>
-        </div>
-        <div class="flex">
-          <!-- <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Follow us
-          </h2> -->
+
           <ul class="text-gray-600 dark:text-gray-400 my-auto">
             <li class="mb-4">
               <nuxt-link :to="{ path: '/', hash: '#secondAbout' }">
@@ -61,28 +62,12 @@
             </li>
           </ul>
         </div>
-        <div class="flex">
-          <!-- <h2
-            class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white"
-          >
-            Legal
-          </h2> -->
-          <ul class="text-gray-600 dark:text-gray-400 my-auto">
-            <li class="mb-4">
-              <nuxt-link :to="{ path: '/', hash: '#client' }">
-                Client
-              </nuxt-link>
-            </li>
-            <li>
-        <nuxt-link :to="{ path: '/', hash: '#product' }"> Product </nuxt-link>
-              
-              <!-- <a href="#" class="hover:underline">Terms &amp; Conditions</a> -->
-            </li>
-          </ul>
-        </div>
+
       </div>
     </div>
     <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    
+    <!-- Section 2 -->
     <div class="sm:flex sm:items-center sm:justify-between md:mx-32">
       <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
         >© 2022
