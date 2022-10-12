@@ -14,8 +14,10 @@
 export default {
   name: "IndexPage",
   
-  mounted() {
-    
+  head() {
+    return {
+      title: this.$store.getters.getCompanyData.company_name ? this.$store.getters.getCompanyData.company_name : ""
+    };
   }
 };
 </script>

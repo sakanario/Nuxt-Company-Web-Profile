@@ -12,8 +12,8 @@ export const state = () => ({
     setContactData(state, data) {
       state.contactData = data?.data[0];
       
-      console.log("set service");
-      console.log(state.contactData);
+      // console.log("set service");
+      // console.log(state.contactData);
     },
   };
   
@@ -30,8 +30,8 @@ export const state = () => ({
                 ? []
                 : response.data?.data?.data;
   
-            console.log("fetch");
-            console.log(fetchedData);
+            // console.log("fetch");
+            // console.log(fetchedData);
   
             context.commit("setContactData", {
               data: fetchedData,
