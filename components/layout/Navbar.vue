@@ -1,20 +1,22 @@
 <template>
   <!-- Inner Wrapper  -->
-  <nav id="navbar" class="flex flex-col sm:flex-row sm:justify-between md:mx-32">
+  <!-- <nav id="navbar" class="flex flex-col md:flex-row md:justify-between md:mx-32"> -->
+  <nav id="navbar" class="flex flex-col md:flex-row">
+    
     <!-- Nav Normal -->
-    <div class="h-12 sm:h-24 flex flex-row items-center justify-between">
+    <div class="h-12 md:h-24 flex flex-row items-center justify-between">
       <!-- Company Logo (Left)-->
       <img class="h-full" :src="CompanyData.logo_url" />
 
       <!-- Button (Right) -->
-      <button @click="toggleNavbar" class="sm:hidden my-auto p-3">
+      <button @click="toggleNavbar" class="md:hidden my-auto p-3">
         <font-awesome-icon icon="fa-solid fa-bars" />
       </button>
     </div>
 
     <!-- Nav Item -->
     <ul
-      class="text-xl sm:flex-row-reverse sm:inline-flex sm:flex-row w-full sm:my-auto mb-5 flex flex-col text-gray-500 mr-12"
+      class="text-xl md:flex-row-reverse md:inline-flex md:flex-row w-full md:my-auto mb-5 flex flex-col text-gray-500 mr-12"
       :class="{ hidden: hideNavbar }"
     >
       <li class="inline-flex mx-3 my-auto py-2 justify-center">
@@ -42,6 +44,7 @@
         </div>
       </li>
     </ul>
+        
   </nav>
 </template>
 
@@ -69,12 +72,5 @@ export default {
 <style scoped>
 
 /* hover focus active */
-.primary-button {
-  background-color : #335E89;
-}
 
-.primary-button:hover {
-  background-color : #336e89;
-  /* background-color : #893333; */
-}
 </style>

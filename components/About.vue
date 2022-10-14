@@ -2,16 +2,16 @@
   <div id="about">
     <!-- First Section -->
     <div
-      class="section-1 p-5 sm:p-12 sm:py-24 md:px-24 text-white flex flex-wrap md:flex-nowrap md:justify-center"
+      class="section-1 p-5 md:py-20 text-white flex flex-wrap md:flex-nowrap md:justify-center"
     >
       <!-- Left -->
-      <div class="flex max-w-2xl">
+      <div class="flex max-w-2xl mr-10">
         <div class="my-auto">
           <h1
             v-html="CompanyData.title"
-            class="text-4xl md:text-6xl font-semibold py-3"
+            class="text-4xl font-semibold py-3"
           ></h1>
-          <p v-html="CompanyData.sub_title" class="md:text-2xl"></p>
+          <p v-html="CompanyData.sub_title" class="description lg:text-2xl"></p>
         </div>
       </div>
 
@@ -23,11 +23,12 @@
 
     <!-- Transition 1 -->
     <div id="transition" class="relative">
-      <img
+      <!-- <img
         id="transition-image-1"
         class="w-full absolute"
         src="../assets/img/substrat-1.svg"
-      />
+      /> -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#335E89" fill-opacity="1" d="M0,32L80,69.3C160,107,320,181,480,176C640,171,800,85,960,53.3C1120,21,1280,43,1360,53.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
     </div>
 
     <!-- Second Section -->
