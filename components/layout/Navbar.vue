@@ -34,7 +34,7 @@
           <nuxt-link :to="{ path: '/', hash: '#contact-us' }">
             <button
               type="button"
-              class="inline-block p-2 bg-blue-600 text-white leading-tight rounded-lg shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+              class="primary-button inline-block p-2 text-white leading-tight rounded-lg shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-500 ease-in-out"
             >
               Contact Us
             </button>
@@ -65,3 +65,16 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+
+/* hover focus active */
+.primary-button {
+  background-color : #335E89;
+}
+
+.primary-button:hover {
+  background-color : #336e89;
+  /* background-color : #893333; */
+}
+</style>
