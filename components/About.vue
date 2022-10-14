@@ -5,11 +5,11 @@
       class="section-1 p-5 md:py-20 text-white flex flex-wrap md:flex-nowrap md:justify-center"
     >
       <!-- Left -->
-      <div class="flex max-w-2xl mr-10">
+      <div class="flex max-w-2xl md:mr-10">
         <div class="my-auto">
           <h1
             v-html="CompanyData.title"
-            class="text-4xl font-semibold py-3"
+            class="text-4xl lg:text-6xl font-semibold py-3"
           ></h1>
           <p v-html="CompanyData.sub_title" class="description lg:text-2xl"></p>
         </div>
