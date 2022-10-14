@@ -7,7 +7,7 @@
 }
 
 .section-2 {
-    background-color: #283489;
+    /* background-color: #283489; */
 }
 
 #transition-image-1 {
@@ -49,6 +49,7 @@
 
 .description{
     text-align: justify;
+    font-size: larger;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -68,6 +69,7 @@
 @media only screen and (min-width: 1024px) {
     .description{
         max-width: none;
+        font-size:x-large;
     }
 }
 
