@@ -1,7 +1,7 @@
 <template>
   <!-- Inner Wrapper  -->
   <!-- <nav id="navbar" class="flex flex-col md:flex-row md:justify-between md:mx-32"> -->
-  <nav id="navbar" class="flex flex-col md:flex-row">
+  <nav id="navbar" class="flex flex-col md:flex-row max-w-screen-xl mx-auto">
     
     <!-- Nav Normal -->
     <div class="h-12 md:h-24 flex flex-row items-center justify-between">
