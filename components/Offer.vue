@@ -2,7 +2,7 @@
   <div id="offer" class="mt-5 space-y-12">
     <!-- Title -->
     <div class="flex justify-center">
-      <h1 class="text-3xl md:text-6xl font-semibold py-3">What We Offer?</h1>
+      <h1 class="text-3xl md:text-6xl font-semibold py-3 head-title">OUR <span><b>SERVICES</b> </span></h1>
     </div>
 
     <!-- Offer Container -->
@@ -26,3 +26,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.head-title{
+  color: #335E89;
+}
+</style>
