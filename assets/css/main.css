@@ -46,11 +46,21 @@
 /* background-color : #893333; */
 }
 
+.container {
+    padding:0px 20px 0px 20px ;
+}
 
+
+.header-text {
+    font-weight: bolder;
+    font-size: larger;
+}
 .description{
     text-align: justify;
     font-size: larger;
 }
+
+
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 640px) {}
@@ -60,14 +70,14 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .description{
+    .side-description{
         max-width: 537px;
     }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
-    .description{
+    .side-description{
         max-width: none;
         font-size:x-large;
     }

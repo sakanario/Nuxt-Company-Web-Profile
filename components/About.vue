@@ -11,7 +11,7 @@
             v-html="CompanyData.title"
             class="text-4xl lg:text-6xl font-semibold py-3"
           ></h1>
-          <p v-html="CompanyData.sub_title" class="description"></p>
+          <p v-html="CompanyData.sub_title" class="description side-description"></p>
         </div>
       </div>
 
@@ -40,7 +40,7 @@
       <!-- Left -->
       <div class="flex max-w-2xl  md:ml-12">
         <div class="my-auto">
-          <p v-html="CompanyData.company_description" class="description"></p>
+          <p v-html="CompanyData.company_description" class="description side-description"></p>
           <!-- <p class="description md:text-2xl">
             membuat kami mampu meningkatkan produktivitas, efisensi dan
             signifikasi dalam peforma setiap perusahaan rekan bisnis kami.

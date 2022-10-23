@@ -1,6 +1,7 @@
 <template>
   <div class="space-y-32">
     <About/>
+    <Descriptive/>
     <Offer/>
     <BigText/>
     <Client/>
