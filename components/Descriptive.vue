@@ -34,6 +34,9 @@ export default {};
     color: #fff;
     min-height: 1115px;
 }
+
+
+
 .desc {
   text-align: justify;
 }
@@ -55,13 +58,21 @@ export default {};
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1024px) {
   .desc, .header-text {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+  .desc, .header-text {
+    font-size: 35px;
+  }
+}
 
 /* 2xl */
-@media only screen and (min-width: 1536px) {}
+@media only screen and (min-width: 1536px) {
+  #descriptive{
+    min-height: 1839px;
+  }
+}
 </style>>
